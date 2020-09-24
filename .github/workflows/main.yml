@@ -7,5 +7,3 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: deweya/chart-repo-pr-action@feat/push-to-fork
-        with:
-          token: ${{ secrets.TOKEN }}
