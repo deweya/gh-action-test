@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: deweya/chart-repo-pr-action@feat/parameters
         with:
-          token: ${{ secrets.PAT }}
+          auth_token: ${{ secrets.PAT }}
           fork_name: deweya/helm-charts
           upstream_owner: deweya0
           committer_email: deweya964@gmail.com
