@@ -9,3 +9,4 @@ jobs:
       - uses: deweya/chart-repo-pr-action@feat/parameters
         with:
           token: ${{ secrets.PAT }}
+          fork_name: deweya/helm-charts
