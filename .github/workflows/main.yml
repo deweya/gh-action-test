@@ -11,3 +11,4 @@ jobs:
           token: ${{ secrets.PAT }}
           fork_name: deweya/helm-charts
           upstream_owner: deweya0
+          committer_email: deweya964@gmail.com
