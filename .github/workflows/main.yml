@@ -10,3 +10,4 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           fork_name: deweya/helm-charts
+          upstream_owner: deweya0
