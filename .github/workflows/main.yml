@@ -12,4 +12,3 @@ jobs:
           fork_name: deweya/helm-charts
           upstream_owner: deweya0
           committer_email: deweya964@gmail.com
-          target_branch: test-release-branch
