@@ -6,10 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: deweya/chart-repo-pr-action@fix/target-branch
+      - uses: deweya/chart-repo-pr-action@master
         with:
           auth_token: ${{ secrets.PAT }}
-          fork_name: deweya/helm-charts
+          fork_name: deweya0/helm-charts
           upstream_owner: deweya0
           committer_email: deweya964@gmail.com
           target_branch: test-release-branch
