@@ -1,14 +1,16 @@
-name: test action
-on: push
+name: Submit PR to chart repository
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   test-job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: deweya/chart-repo-pr-action@master
+      - uses: deweya/chart-repo-pr-action@v0.2.0
         with:
           auth_token: ${{ secrets.PAT }}
-          fork_name: deweya0/helm-charts
-          upstream_owner: deweya0
+          chart_repo: deweya0/helm-charts
           committer_email: deweya964@gmail.com
